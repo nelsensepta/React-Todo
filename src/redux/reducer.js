@@ -14,7 +14,6 @@ export const reducer = (state = todos, action) => {
       return newTodos;
     case UPDATE_TODO:
       newTodos = [...state];
-      console.log(newTodos);
 
       // Algoritma ke 1
       let index = newTodos.findIndex((value) => value.id === action.payload.id);
